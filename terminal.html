@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+<head>
+    <!--content type : HTML -->
+    <meta http-equiv="content-type" 
+        content="text/html; charset=UTF-8">
+  
+    <!-- Making viewport responsive -->
+    <meta name="viewport" content=
+        "width=device-width,minimum-scale=1,
+        initial-scale=1">
+  
+    <!-- Loading jQuery, jQuery.terminal, 
+        and style sheet -->
+    <script src=
+        "https://code.jquery.com/jquery-3.3.1.min.js">
+    </script>
+  
+    <script src=
+"https://unpkg.com/jquery.terminal/js/jquery.terminal.min.js">
+    </script>
+  
+    <link rel="stylesheet" href=
+"https://unpkg.com/jquery.terminal/css/jquery.terminal.min.css" />
+
+    <style type="text/css">
+        .terminal,
+        span,
+        .cmd,
+        div {
+            --color: rgba(0, 128, 0, 0.99);
+        }
+
+        .terminal,
+        span {
+            --size: 1.4;
+        }
+    </style>
+    <title>Whirlpool</title>
+</head>
+  
+<body>
+    <script>
+        $('body').terminal({
+            iam: function (name) {
+                this.echo('Hello, ' + name 
+                + '. Welcome to Whirlpool>_<');
+            },
+            creator: function () {
+                this.echo('Daniel Lu');
+            },
+            whirlpool: function () {
+                this.echo('Congrats - You Are One Of The First Few People'
+                + ' To Find Out This Secret Command Take A Break And Go '
+                + 'To neal.fun A Fun Website By Neal Agarwal');
+            },
+            caleb: function () {
+                this.echo('Caleb - Fun Websites Recommended For You Are neal.fun,  & terminal.jcubic.pl/500')
+            },
+            help_advanced: function () {
+                this.echo('iam - iam command for'
+                +'whirlpool to recognize you'
+                +'\ncreator - to know the creator'
+                +'\nwhirlpool - undefined command'
+                +'\ncaleb - Only For Caleb Wang Dont Peek'
+                +'\nthankyous - credits');
+            },
+            thankyous: function () {
+                this.echo('Credits to Sandeep Jain & Geeks for Geeks')
+            },
+            help: function () {
+                this.echo('iam - iam command for'
+                + ' whirlpool to recognize you'
+                + '\ncreator - to know the creator'
+                +'\nhelp_advanced - to get advanced help');
+            },
+        }, {
+            greetings: 'Whirlpool>_< - If you came'
+            + ' to this untrusted terminal by accident, close this tab'
+            + ' and proceed'
+        }); 
+    </script>
+    <noscript>You need to enable JavaScript to view the full site.</noscript>
+</body>
+  
+</html>
